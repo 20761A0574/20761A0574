@@ -1,0 +1,281 @@
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: inline-block;
+  color: red;
+  text-align: center;
+  padding: 24px 70px;
+  text-decoration: none;
+}
+li a:hover,.dropdown:hover.dropbtn{
+  background-color: palegreen;
+}
+li.dropdown{
+display:inline-block;
+}
+.dropdown-content{
+display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: "#f1f1f1";
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1500px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+body{
+  background-image: url("bd.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img {
+  border-radius: 5%;
+  border:5px solid #555;
+}
+</style>
+</head>
+<body bgcolor="hotpink">
+<ul>
+  <li><a class="active" href="design.html">Home</a></li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">Our Designs</a>
+  <div class="dropdown-content">
+  <a href="kitchen1.html">Kitchen Designs</a>
+  <a href="living.html">Living Room Designs</a>
+  <a href="bed.html">Bed Room Designs</a>
+  <a href="din.html">Dining Room Designs</a>
+  <a href="child.html">Children's Room Designs</a>
+  </div>
+  </li>
+  <li><a href="whyus.html">Why Us?</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+  <li><a href="recent.html">Recent Projects</a></li>
+</ul>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<i><h1 align="center">HOME DECOR</h1></i>
+<hr>
+
+<h2>Best Interior Designs</h2>
+<p>Make your Life Happy & Comfortable</p>
+
+<div class="content">
+  <img src="http://2.bp.blogspot.com/-HC_z5LuwKBE/ULnVS6lF_RI/AAAAAAAAGS0/COqi-OcZzsU/s1600/interior+decoration+quotes+(1).jpg" alt="Mountains" style="width:100%">
+  <h3>RECENT PROJECTS</h3>
+  <p>We have designed interiors for modern family homes to luxury residential projects across South India. </p>
+  <p>From initial consultation to a completely finished home, we provide our clients with the best possible interior designs and ideas that are comfortable, affordable, and livable.</p>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-696x368-pixels-1631868338-UBDPk/living-room-1-1631868373-3bEIF.png" alt="Mountains" style="width:100%">
+	  <h3>Opinion</h3>
+	  <img src="https://tse1.mm.bing.net/th?id=OIP.0wMQKHyZv0pEObT4F4f9vwHaEK&pid=Api&P=0&w=273&h=153" alt="avatar" style="width:20%">
+	  <p>"Hats off to the entire team at HomeDecor.</p>
+	  <p>They finished the project ahead of time".</p>
+    </div>
+  </div>
+     
+  <div class="column">
+    <div class="content">
+    <img src="https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-696x368-pixels-1631868338-UBDPk/bedroom-1-1631868353-Hc5rO.png" alt="Lights" style="width:100%">
+    <h3>Opinion</h3>
+	  <img src="https://tse3.mm.bing.net/th?id=OIP.HQxHzMiyurRsx2WbC_3cpAHaE8&pid=Api&P=0&w=232&h=155" alt="avatar" style="width:15%">
+	  <p>"Our Experience with HomeDecor was nice.
+	  Thanks to the project manager.They worked so much on this project,and finished it on time".</p>
+  </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-696x368-pixels-1631868338-UBDPk/dining-1-1631868359-HzXJ7.png" alt="Nature" style="width:100%">
+     <h3>Opinion</h3>
+	  <img src="https://tse2.mm.bing.net/th?id=OIP.3R_q1QYM1Hyj2Uye7z07swHaFj&pid=Api&P=0&w=251&h=188" alt="avatar" style="width:15%">
+	  <p>"Our Experience with HomeDecor was nice.
+	  Thanks to the project manager.They worked so much on this project,and finished it on time".</p> 
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-696x368-pixels-1631868338-UBDPk/home-office-1-1637318016-wc8xC.png" alt="Mountains" style="width:100%">
+	<h3>Opinion</h3>
+	  <img src="https://tse1.mm.bing.net/th?id=OIP.8agzOrrHblbY9VAUKp_l0wHaEL&pid=Api&P=0&w=284&h=160" alt="avatar" style="width:15%">
+	  <p>"Our Experience with HomeDecor was nice.
+	  Thanks to the project manager.They worked so much on this project,and finished it on time".</p> 
+    </div>
+	<br><br>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/desktop-696x368-pixels-1631868338-UBDPk/guest-bedroom-1-1637324035-aeljG.png" alt="Mountains" style="width:100%">
+	<h3>Opinion</h3>
+	  <img src="https://tse3.mm.bing.net/th?id=OIP.ASAS4q0mK9HpkE49qRAFEAHaFj&pid=Api&P=0&w=207&h=155" alt="avatar" style="width:15%">
+	  <p>"This house is a part of me.</p> 
+	  <p>We reached out to HomeDecor and they designed the house that we really wanted."</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://images.livspace-cdn.com/w:768/h:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/india-1634120414-v3jjP/designs-1634120429-iNDYp/living-room-1634120516-88dPy/lk-in-lr-0210-a-1640631363-M0sBA.png" alt="Mountains" style="width:100%">
+	<h3>Opinion</h3>
+	  <img src="https://tse4.mm.bing.net/th?id=OIP.sLk-uUYYAy8BwqefbfSKWAHaFj&pid=Api&P=0&w=223&h=167" alt="avatar" style="width:15%">
+	  <p>"I really love the designing of HomeDecor.</p>
+	  <p>I feel very happy about their work."</p> 
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://images.livspace-cdn.com/w:768/h:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/india-1634120414-v3jjP/designs-1634120429-iNDYp/living-room-1634120516-88dPy/lk-in-lr-0205-1640631402-TPJLU.png" alt="Mountains" style="width:100%">
+	<h3>Opinion</h3>
+	  <img src="https://tse2.mm.bing.net/th?id=OIP.HjG9XyuBqpeZkJKkq5v6IgHaE8&pid=Api&P=0&w=258&h=172" alt="avatar" style="width:15%">
+	  <p>"I really love the designing of HomeDecor.</p>
+	  <p>Our Experience with HomeDecor was nice."</p> 
+    </div>
+    </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://images.livspace-cdn.com/w:768/h:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/india-1634120414-v3jjP/designs-1634120429-iNDYp/living-room-1634120516-88dPy/lk-in-lr-0166-1640605687-3rc3u.jpg" alt="Mountains" style="width:100%">
+	<h3>Opinion</h3>
+	  <img src="https://tse3.mm.bing.net/th?id=OIP.7VThHu2VS76jFvN5_5gnlgHaEW&pid=Api&P=0&w=293&h=172" alt="avatar" style="width:15%">
+	  <p>"I was very happy with the design.</p>
+	  <p>I feel very happy about their work."</p> 
+    </div>
+	<br><br>
+    </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://images.livspace-cdn.com/w:768/h:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/designs-dcb-pilots-1633504106-WVPCg/bedroom-d-1633671293-gvyJ9/2021-06-10-br6-op1-v1-vp-01-2-1633671394-eKVIw.jpg" alt="Mountains" style="width:100%">
+	<h3>Opinion</h3>
+	  <img src="https://tse1.mm.bing.net/th?id=OIP.HH_FRDOcqvTYIaucYIs8OwHaD5&pid=Api&P=0&w=337&h=177" alt="avatar" style="width:15%">
+	  <p>"Our experience with HomeDecor is nice.</p>
+	  <p>This house is a part of me."</p> 
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://images.livspace-cdn.com/w:768/h:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/Kitchen/sp-cu-mk-0340-1604921055-kec5W/renders-1604921066-r0qs7/23-1610005916-SsG2p.jpg" alt="Mountains" style="width:100%">
+	<h3>Opinion</h3>
+	  <img src="https://tse3.mm.bing.net/th?id=OIP._hGeapLP9fx2lCAsettHeQHaLH&pid=Api&P=0&w=131&h=197" alt="avatar" style="width:15%">
+	  <p>"Thanks to HomeDecor.</p>
+	  <p>For decorating the home as i desire."</p> 
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://images.livspace-cdn.com/w:768/h:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/india-designs-primary-rooms-1633326800-ljcVh/bedroom-1633326840-purFO/lk-in-mbr-0115-1633505836-Y9IwF/mbr-v-2denoiser-1-1633521864-Tfza1.jpg" alt="Mountains" style="width:100%">
+	<h3>Opinion</h3>
+	  <img src="https://tse1.mm.bing.net/th?id=OIP.Krzo0p9UfVMMhtIkry6f-wHaDt&pid=Api&P=0&w=358&h=179" alt="avatar" style="width:15%">
+	  <p>"I enjoyed the services of HomeDecor.</p>
+	  <p>They completed the work on time."</p> 
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://images.livspace-cdn.com/w:768/h:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/Kitchen/sp-cu-mk-0752-1613474595-2mxiC/kitchen-4-carnival-1-1613476068-YAtPd.png" alt="Mountains" style="width:100%">
+	<h3>Opinion</h3>
+	  <img src="https://tse3.explicit.bing.net/th?id=OIP.rhWeAIeiB8NJwP1_MAKm5gHaLH&pid=Api&P=0&w=106&h=159" alt="avatar" style="width:15%">
+	  <p>"I enjoy the services of HomeDecor.</p>
+	  <p>I was very happy about about their work."</p> 
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
