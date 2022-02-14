@@ -1,0 +1,167 @@
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: inline-block;
+  color: red;
+  text-align: center;
+  padding: 24px 70px;
+  text-decoration: none;
+}
+li a:hover,.dropdown:hover.dropbtn{
+  background-color: palegreen;
+}
+li.dropdown{
+display:inline-block;
+}
+.dropdown-content{
+display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+body{
+  background-image: url("https://www.themarketingcommando.com/wp-content/uploads/2016/09/contact_us.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img {
+  border-radius: 25%;
+}
+</style>
+</head>
+<body>
+<i><h1  align="center" style="font-size:50px"><font color="cyan">HOME
+&nbsp; DECOR</font></h1></i>
+<ul>
+  <li><a class="active" href="design.html">Home</a></li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">Our Designs</a>
+  <span class="dropdown-content">
+  <a href="kitchen1.html">Kitchen Designs</a>
+  <a href="living.html">Living Room Designs</a>
+  <a href="bed.html">Bed Room Designs</a>
+  <a href="din.html">Dining Room Designs</a>
+  <a href="child.html">Children's Room Designs</a>
+  </span>
+  </li>
+  <li><a href="whyus.html">Why Us?</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+  <li><a href="recent.html">Recent Projects</a></li>
+</ul>
+<div class="container">
+  <div style="text-align:center">
+    <h1>Contact Us</h1>
+    <p>Get In Touch</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://images.livspace-cdn.com/w:768/h:400/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/india-dcb-1633067910-VxdU7/dining-room-1633067983-jU9Gk/spl-in-dr-0002-1633080914-3Vfn8/2021-05-20-mid-century-modern-home-dr1-op1-v1-rk-01-1633080921-cIEVi.jpg" style="width:85%" alt="avatar">
+	   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<h2>Call-Us:9561230762</h2>
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		<label for="num" >Mobile Number</label>
+        <input type="text" id="num" name="Mobile Number" placeholder="+91">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
