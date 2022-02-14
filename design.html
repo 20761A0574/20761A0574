@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function values()
+{
+stu_name=Registration.name.value;
+stu_password=document.Registration.pwd.value;
+stu_p1=document.Registration.pwd.value;
+if(stu_name==""||stu_name==null)
+{
+alert("please enter name");
+}
+else if(stu_password==""||stu_password==null)
+{
+alert("please enter password");
+}
+else if(stu_password.length<=8)
+{
+alert("password length minimum of 8 characters");
+}
+}
+}
+</script>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: inline-block;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover,.dropdown:hover.dropbtn{
+  background-color: palegreen;
+}
+li.dropdown{
+display:inline-block;
+}
+.dropdown-content{
+display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+body{
+  background-image: url("https://images.livmatrix.com/img/landingpages/full-home-interiors/20190219/Web-banner-FINAL-1.jpg");
+  height: 100%; 
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a.highlight:hover{
+color:blue;
+font-size:22px;
+}
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+* {
+  box-sizing:border-box;
+}
+.rcorners{
+border-radius: 25px;
+  border: 2px solid red;
+  padding: 20px; 
+  width: 350px;
+  height: 450px;
+}
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 400px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=email]:focus,input[type=checkbox]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  text-align:center;
+  text-decoratio:none;
+  display:inline-block;
+  border-radius:12px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+
+.btn:hover {
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+<i><h1 align="right" style="font-size:50px"><font color="white">HOME
+&nbsp; DECOR</font></h1></i>
+<ul>
+  <li><a class="active" href="design.html">Home</a></li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">Our Designs</a>
+  <div class="dropdown-content">
+  <a href="kitchen1.html">Kitchen Designs</a>
+  <a href="living.html">Living Room Designs</a>
+  <a href="bed.html">Bed Room Designs</a>
+  <a href="din.html">Dining Room Designs</a>
+  <a href="child.html">Children's Room Designs</a>
+  </div>
+  </li>
+  <li><a href="whyus.html">Why Us?</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+  <li><a href="recent.html">Recent Projects</a></li>
+</ul>
+<br><br>
+<div class="container">
+<div class="rcorners">
+  <form action="Registrationform" action="server address">
+    <h2 style="font-size:30px">Talk to a designer</h2>
+
+    <input type="text" placeholder="Name" name="text" required>
+	<input type="email" placeholder="email" name="email" required>
+     <input type="text" id="num" name="Mobile Number" placeholder="+91" required>
+	<input type="checkbox" name="c" checked>Send me updates on Whatsapp<br>
+	<input type="text" placeholder="Property name" name="p" required>
+    <button type="submit" class="btn">Speek to us</button>
+  </form>
+</div>
+</div>
+</body>
+</html>
